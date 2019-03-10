@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess.Controller">
+   <center>
+      <GridPane fx:id="gridPane" alignment="center" hgap="10" vgap="10">
+
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="60.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="60.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                   <ImageView fx:id="black_rook_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_rook.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_knight_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_knight.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_bishop_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_bishop.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_queen_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_queen.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_king_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_king.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_bishop_2" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_bishop.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_knight_2" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_knight.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_rook_2" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_rook.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+      
+                   <ImageView fx:id="black_pawn_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_pawn_2" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/black_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_pawn_3" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                       <image>
+                           <Image url="@piecespics/black_pawn.png" />
+                       </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_pawn_4" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                       <image>
+                           <Image url="@piecespics/black_pawn.png" />
+                       </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_pawn_5" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                       <image>
+                           <Image url="@piecespics/black_pawn.png" />
+                       </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_pawn_6" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                       <image>
+                           <Image url="@piecespics/black_pawn.png" />
+                       </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_pawn_7" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                       <image>
+                           <Image url="@piecespics/black_pawn.png" />
+                       </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="black_pawn_8" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                       <image>
+                           <Image url="@piecespics/black_pawn.png" />
+                       </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+      
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+      
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+      
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+      
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+                   <ImageView onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport></ImageView>
+      
+                   <ImageView fx:id="white_pawn_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_pawn_2" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_pawn_3" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_pawn_4" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_pawn_5" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_pawn_6" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_pawn_7" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_pawn_8" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_pawn.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+      
+                   <ImageView fx:id="white_rook_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_rook.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_knight_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_knight.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_bishop_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_bishop.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_queen_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_queen.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_king_1" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_king.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_bishop_2" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_bishop.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_knight_2" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_knight.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+                   <ImageView fx:id="white_rook_2" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@piecespics/white_rook.png" />
+                     </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+      
+      
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
